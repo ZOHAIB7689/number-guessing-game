@@ -5,16 +5,6 @@ import { Input } from "./ui/input"
 
 
 
-interface NumberGuessingState{
-    gamestart:boolean,
-    gameOver:boolean,
-    isPaused: boolean,
-    targetNumber:number,
-    userGuess : number | string,
-    attempts: number
-
-}
-
 export default function NumberGuessing(){
 
 const [gameStart , setGameStarted] = useState<boolean>(false);
